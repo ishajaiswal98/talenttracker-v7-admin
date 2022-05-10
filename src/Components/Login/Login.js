@@ -18,6 +18,7 @@ export default class Login extends Component {
    }
    this.onChange = this.onChange.bind(this)
    this.submitForm = this.submitForm.bind(this)
+
  }
  onChange(e) {
    this.setState({
@@ -42,6 +43,7 @@ export default class Login extends Component {
    }
    
  }
+ 
  render() {
   if(this.state.loggedIn){
     return <Navigate to='/RecruiterMaster' />

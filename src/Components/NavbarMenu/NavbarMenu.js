@@ -7,7 +7,7 @@ const NavbarMenu = () => {
     <div>
     <Navbar expand="lg" className='topnav' fixed='top'>
     <Container fluid>
-    <Navbar.Brand href="#home" ><img src="images/logo.jpeg" alt="logo" /><span className='text-white fw-bold mx-3 ' >Talent Trackers HR</span></Navbar.Brand>
+    <Navbar.Brand href="#home" ><img src="images/logo.jpeg" alt="logo" /><span className='text-white fw-bold mx-3 ' >Talent Trackers Consulting Pvt Ltd</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ms-auto" >

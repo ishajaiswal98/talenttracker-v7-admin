@@ -1,105 +1,58 @@
 import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col,Form } from 'react-bootstrap'
+import { ToastContainer } from 'react-toastify';
 import "./Dashboard.css";
 const Dashboard = () => {
   return (
     <div className='dashboard'>
       <Sidebar />
       <NavbarMenu />
-      <Container className='right-report-container'>
-            <div>
-            <Button variant="outline-secondary" className='mt-3 ml-2'>Today</Button>
-            <Button variant="outline-secondary" className='mt-3 mx-3'>This Month</Button>
-            <Button variant="outline-secondary" className='mt-3 mx-3'>Last Month</Button>
-            <Button variant="outline-secondary" className='mt-3 mx-3'>This Quarter</Button>
-            <Button variant="outline-secondary" className='mt-3 mx-3'>This Year</Button>
-            <Button variant="outline-secondary" className='mt-3 mx-3'>Last Year</Button>
-            </div>
-            <Row className='mt-3'>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>No. of JDs locked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>No. of JDs at interview stage</Card.Title>
-                            <br></br>
-                            <h2>133</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>No. of successful closures</Card.Title>
-                            <br></br>
-                            <h2>50</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Contact Unlocked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>No. of JD delivered/submitted but feedback pending from client</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Contact Unlocked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Contact Unlocked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Contact Unlocked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col sm={4}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Contact Unlocked</Card.Title>
-                            <br></br>
-                            <h2>0</h2>
-                        </Card.Body>
-                    </Card>
-                </Col> 
-            </Row>
+      <ToastContainer/>
+      <Container className="jd-cont">
+            <form>
+                <Row>
+                    <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'> JD Status</Form.Label>
+                    <Form.Check type="checkbox" label="open (not accepted by any user) " />
+                    <Form.Check type="checkbox" label=" pending delivery (accepted but not yet delivered)" />
+                    <Form.Check type="checkbox" label=" delivery done-await client feedback" />
+                    <Form.Check type="checkbox" label=" interview stage" />
+                    <Form.Check type="checkbox" label="offer stage " />
+                    <Form.Check type="checkbox" label="JD successfully closed " />
+                    <Form.Check type="checkbox" label=" rework (with reasons)" />
+                    </Col>
+                    <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'>  Admin spoc (single point of contact)</Form.Label>
+                    <Form.Control type='text' placeholder=' Name of the spoc '/>
+                    <Form.Control type='text' placeholder=' Email ID '/>
+                    <Form.Control type='text' placeholder=' Mobile Number '/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'> Client Coordination</Form.Label>
+                    <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">User</option>
+                   
+                    
+                    <option value="2">Admin</option>
+                    </Form.Select>
+                    </Col>
+                    <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'> Assured delivery time required by client (TAT)</Form.Label>
+                    
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'> Payment Terms</Form.Label>
+                    <Form.Control type="text" placeholder=''></Form.Control>
+                    </Col>
+                </Row>
+            </form>
         </Container>
     </div>
   )
