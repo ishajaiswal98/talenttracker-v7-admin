@@ -10,6 +10,8 @@ import Login from "./Components/Login/Login";
 import LogOut from "./Components/Login/LogOut";
 import People from "./Components/People/People";
 import RecruiterMaster from "./Components/RecruiterMaster/RecruiterMaster";
+import JdMaster from "./Components/JdMaster/JdMaster";
+import Filter from './Components/Filter/Filter'
 function App() {
 
   return (
@@ -22,6 +24,8 @@ function App() {
       <Route path="/logout" element={<LogOut />} />
       <Route path="/People" element={<People />} />
       <Route path="/RecruiterMaster" element={<RecruiterMaster/>} />
+      <Route path="/JdMaster" element={<JdMaster/>}/>
+      <Route path="/Filter" element={<Filter/>}/>
     </Routes>
   </BrowserRouter>
     </>

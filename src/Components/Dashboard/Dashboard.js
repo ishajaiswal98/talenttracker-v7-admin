@@ -5,6 +5,7 @@ import { Container, Row, Col,Form } from 'react-bootstrap'
 import { ToastContainer } from 'react-toastify';
 import "./Dashboard.css";
 const Dashboard = () => {
+  
   return (
     <div className='dashboard'>
       <Sidebar />
@@ -21,7 +22,18 @@ const Dashboard = () => {
                     <Form.Check type="checkbox" label=" interview stage" />
                     <Form.Check type="checkbox" label="offer stage " />
                     <Form.Check type="checkbox" label="JD successfully closed " />
-                    <Form.Check type="checkbox" label=" rework (with reasons)" />
+                    <Form.Label >rework (with reasons)</Form.Label>
+                    <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1"> CVs quality not good- No shortlisting from client for earlier submissions </option>
+                                       
+                    <option value="2">No delivery made by the user who accepted the JD</option>
+                    <option value="3">Client changed the JD criteria</option>
+                    <option value="4">Candidates backed out/didn’t turn up for the interview/rejected by client</option>
+                    <option value="5">Delay from client in giving the feedback, now fresh sourcing required</option>
+                    <option value="6">Any other reason not covered above (text field-1000 characters for admin to enter)</option>
+                    
+                    </Form.Select> 
                     </Col>
                     <Col xs={6}>
                     <Form.Label className='fw-bold mb-3 mt-3'>  Admin spoc (single point of contact)</Form.Label>
@@ -48,9 +60,32 @@ const Dashboard = () => {
                 </Row>
                 <Row>
                     <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'> Remarks/comments</Form.Label>
+                    <Form.Control type="text" placeholder='Remarks'></Form.Control>
+                    </Col>
+                    <Col xs={6}>
                     <Form.Label className='fw-bold mb-3 mt-3'> Payment Terms</Form.Label>
                     <Form.Control type="text" placeholder=''></Form.Control>
+
                     </Col>
+                </Row>
+                <Row>
+                  <Col xs={6}>
+                  <Form.Label className='fw-bold mb-3 mt-3'>Assured delivery time required by client (TAT)</Form.Label>
+                  </Col>
+                  <Col xs={6}>
+                  <Form.Label className='fw-bold mb-3 mt-3'>Sign Up Rate </Form.Label>
+                    <Form.Control type="text" placeholder=''></Form.Control>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={6}>
+                  <Form.Label className='fw-bold mb-3 mt-3'>Your Payout</Form.Label>
+                  <Form.Check type="checkbox" label="% payout If you use Talent Tracker’s database. " />
+                    <Form.Check type="checkbox" label=" % payout if you use your own portal- naukri/monster/times job etc " />
+                    <Form.Check type="checkbox" label=" absolute value payout if use your own portal (Naukri/Monster/Timesjob etc) " />
+                    <Form.Check type="checkbox" label=" absolute value payout---if use Talent Trackers database. " />
+                  </Col>
                 </Row>
             </form>
         </Container>

@@ -1,6 +1,19 @@
+.top-button {
+    margin-top: 7rem;
+    margin-left: 5rem;
+}
+.top-button  .dropdown-toggle::after{
+    display: none !important;
+} 
+.myprofile-cont{
+    margin-left: 2rem !important;
+}
+.top-button .text {
+    color: #7367f0 !important;
+}
 .myprofile {
     margin-top: 7rem;
-    margin-left: 8rem;
+    margin-left: 5rem !important;
 }
 .myprofile .sidebar .card {
     box-shadow: 0px 0px 4px rgb(187, 186, 186);

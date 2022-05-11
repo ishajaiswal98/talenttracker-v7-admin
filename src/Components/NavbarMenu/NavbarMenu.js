@@ -11,6 +11,7 @@ const NavbarMenu = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ms-auto" >
+    
       <Nav.Link href="#home"><i className="fas fa-sun"></i></Nav.Link>
       <Nav.Link href="#features"><i className="fas fa-life-ring"></i></Nav.Link>
      

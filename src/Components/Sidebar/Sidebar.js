@@ -41,7 +41,7 @@ const Sidebar = () => {
                <Link to='/Dashbaord'>New JD addition</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<BsCardChecklist />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>JD master</Link> 
+               <Link to='/JdMaster'>JD master</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<MdWorkOutline />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
                <Link to='/'>User ID level changes</Link> 
