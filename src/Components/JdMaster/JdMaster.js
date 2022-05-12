@@ -1,37 +1,13 @@
 import React from 'react'
-import { Container, Table, Modal, Button, Form, Row, Col } from 'react-bootstrap'
+import { Container, Table } from 'react-bootstrap'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Sidebar from '../Sidebar/Sidebar'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
-import { useState } from 'react'
+
 
 const JdMaster = () => {
-    const [show5, setShow5] = useState(false);
-
-    const handleClose5 = () => setShow5(false);
-    const handleShow5 = () => setShow5(true);
-    const notify = () => toast.success("saved");
-
-    const [show6, setShow6] = useState(false);
-
-    const handleClose6 = () => setShow6(false);
-    const handleShow6 = () => setShow6(true);
-
-    const [show7, setShow7] = useState(false);
-
-    const handleClose7 = () => setShow7(false);
-    const handleShow7 = () => setShow7(true);
-
-    const [show8, setShow8] = useState(false);
-
-    const handleClose8 = () => setShow8(false);
-    const handleShow8 = () => setShow8(true);
-
-    const [show9, setShow9] = useState(false);
-
-    const handleClose9 = () => setShow9(false);
-    const handleShow9 = () => setShow9(true);
+   
   return (
     <div>
         <Sidebar />
@@ -78,16 +54,16 @@ const JdMaster = () => {
                     <td>Na</td>
                     <td>4</td>
                     <td>n/a</td>
-                    <td  onClick={handleShow5} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td  onClick={handleShow6} style={{color:'blue', textDecoration:'underline'}}>5</td>
+                    <td >n/a</td>
+                    <td  >5</td>
                     <td>Indivisual</td>
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow7} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td onClick={handleShow8} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td onClick={handleShow8} style={{color:'blue', textDecoration:'underline'}}>Edit & Delete</td>
-                    <td onClick={handleShow9} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td >n/a</td>
+                    <td >n/a</td>
+                    <td >Edit & Delete</td>
+                    <td >n/a</td>
                 </tr>
             </tbody>
             </Table>

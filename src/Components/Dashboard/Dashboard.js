@@ -1,10 +1,32 @@
 import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
-import { Container, Row, Col,Form } from 'react-bootstrap'
-import { ToastContainer } from 'react-toastify';
+import { Container, Row, Col,Form , Button} from 'react-bootstrap'
+import { ToastContainer  } from 'react-toastify';
+import Select from 'react-select'
 import "./Dashboard.css";
 const Dashboard = () => {
+  
+   
+  const options = [
+    { value: 'Services', label: 'Services' },
+    { value: 'Manufacturing', label: 'Manufacturing' },
+    { value: 'IT- Information Technology', label: 'IT- Information Technology' },
+    { value: 'Education', label: 'Education' },
+    { value: 'Real estate/Construction', label: 'Real estate/Construction' },
+    { value: 'Finance/BFSI', label: 'Finance/BFSI' },
+    { value: 'Healthcare/Pharm', label: 'Healthcare/Pharm' },
+    { value: 'Retail', label: 'Retail' },
+    { value: 'Hospitality', label: 'Hospitality' },
+    { value: 'Public Sector/Philonthropy/Associations', label: 'Public Sector/Philonthropy/Associations' },
+    { value: 'FMCG', label: 'FMCG' },
+    { value: 'Textile', label: 'Textile' },
+    { value: 'Telecom', label: 'Telecom' },
+    { value: 'logistics/supply chain', label: 'logistics/supply chain' },
+    { value: 'Media/Publishing/Entertainment', label: 'Media/Publishing/Entertainment' },
+    { value: 'Others', label: 'Others' }
+  
+  ]
   
   return (
     <div className='dashboard'>
@@ -86,7 +108,14 @@ const Dashboard = () => {
                     <Form.Check type="checkbox" label=" absolute value payout if use your own portal (Naukri/Monster/Timesjob etc) " />
                     <Form.Check type="checkbox" label=" absolute value payout---if use Talent Trackers database. " />
                   </Col>
+                  <Col xs={6}>
+                  <Form.Label className='fw-bold mb-3 mt-3'>preferred industries to take JDs? </Form.Label>
+                  <Select isMulti options={options} />
+                  </Col>
                 </Row>
+                <Button variant="primary" >
+            Save 
+          </Button> 
             </form>
         </Container>
     </div>

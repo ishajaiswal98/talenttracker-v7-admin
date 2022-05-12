@@ -44,7 +44,7 @@ const Sidebar = () => {
                <Link to='/JdMaster'>JD master</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<MdWorkOutline />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>User ID level changes</Link> 
+               <Link to='/useridlevl'>User ID level changes</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
                <Link to='/'>User dashboard</Link> 
