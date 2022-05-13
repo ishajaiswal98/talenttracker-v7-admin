@@ -35,6 +35,176 @@ const Dashboard = () => {
       <ToastContainer/>
       <Container className="jd-cont">
             <form>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>User Category</Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">A&B</option>
+                    <option value="5">B&C</option>
+                    <option value="6">C&A</option>
+                    <option value="7">A,B&C</option>
+                    <option value="8">In house</option>
+                    <option value="9">A,B,C&In house</option>
+                    </Form.Select>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Force to use our database?</Form.Label>
+                <Form.Check type="checkbox" label="You must use our database etc for this JD " />
+                
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Exclusivity </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">10</option>
+                    <option value="7">unlimited</option>
+                   
+                    </Form.Select>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>CVs quality check </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    </Form.Select>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>priority tag (P) </Form.Label>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>JD upload date-time  </Form.Label>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>JD number  </Form.Label>
+                <Form.Control type='text' placeholder=' Number  '/>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Number of vacancies </Form.Label>
+                <Form.Control type='text' placeholder=' Number of vacancies '/>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'> Job description</Form.Label>
+                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Title</Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Client name </Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Client company Website </Form.Label>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Client company Linkedin URL </Form.Label>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Salary </Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Education </Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Experience </Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>work location of JD  </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">Delhi</option>
+                    <option value="2">Gurgaon</option>
+                    <option value="3">Noida</option>
+                    <option value="4">Mumbai</option>
+                    <option value="5">Pune</option>
+                    <option value="6">Ahmedabad</option>
+                    <option value="7">Chennai</option>
+                    <option value="8">Kolkata</option>
+                    <option value="9">Hyderabad</option>
+                    <option value="10">Banglore</option>
+                    <option value="11">Jaipur</option>
+                   
+                    </Form.Select>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Rounds of interview </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </Form.Select>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Notice period preference given by client  </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">Immediate</option>
+                    <option value="2">15 days</option>
+                    <option value="3">20 days</option>
+                    <option value="4">30days</option>
+                    <option value="5">2 months</option>
+                    <option value="6">3 months</option>
+                    </Form.Select>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Replacement period  </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">3 months</option>
+                    <option value="2">6 months</option>
+                    </Form.Select>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Number of submissions required  </Form.Label>
+                <Form.Control type='text' placeholder='  '/>
+                </Col>
+                <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Allow one candidate submission by user? </Form.Label>
+                <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    </Form.Select>
+                </Col>
+              </Row>
                 <Row>
                     <Col xs={6}>
                     <Form.Label className='fw-bold mb-3 mt-3'> JD Status</Form.Label>
@@ -98,6 +268,21 @@ const Dashboard = () => {
                   <Col xs={6}>
                   <Form.Label className='fw-bold mb-3 mt-3'>Sign Up Rate </Form.Label>
                     <Form.Control type="text" placeholder=''></Form.Control>
+                    </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                    <Form.Label className='fw-bold mb-3 mt-3'>gross annual CTC of the candidate</Form.Label>
+                    <Form.Select aria-label="Default select example">
+                    <option>select</option>
+                    <option value="1">- 8.33%</option>
+                    <option value="2">7.5%</option>
+                    <option value="3">7%</option>
+                    <option value="4">10%</option>
+                    <option value="5">6%</option>
+                    <option value="6">12%</option>
+                    </Form.Select>
+                    
                   </Col>
                 </Row>
                 <Row>

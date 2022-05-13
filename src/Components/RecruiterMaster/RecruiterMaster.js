@@ -334,6 +334,7 @@ const RecruiterMaster = () => {
                     <option value="1">A</option>
                     <option value="2">B</option>
                     <option value="3">C</option>
+                    <option value="4">in-house</option>
                     </Form.Select>
                 </Col>
                 <Col xs={6}>
@@ -351,8 +352,10 @@ const RecruiterMaster = () => {
                     <option>Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-                    <option value="4">4</option>
-                    <option value="8">8</option>
+                    <option value="3">4</option>
+                    <option value="4">8</option>
+                    <option value="5">16</option>
+                    <option value="6">unlimited</option>
                     </Form.Select>
                 </Col>
                 <Col xs={6}>
@@ -415,17 +418,40 @@ const RecruiterMaster = () => {
           <Modal.Title>Personal Information</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form.Control type='text' placeholder='First Name'/>
-          <Form.Control type='text' placeholder='Last Name'/>
-          <Form.Control type='text' placeholder='Personal Email'/>
-          <Form.Control type='text' placeholder='Mobile Number'/>
-          <Form.Control type='text' placeholder='Current Location'/>
+          <Container>
+            <Row>
+              <Col xs={6}>
+        <Form.Label className='fw-bold mb-3 mt-3'>First Name </Form.Label>
+          <Form.Control type='text' value='Isha'/>
+          </Col>
+          <Col xs={6}>
+          <Form.Label className='fw-bold mb-3 mt-3'>Last Name </Form.Label>
+          <Form.Control type='text' Value='jaiswal'/>
+          </Col>
+          </Row>
+          <Row>
+            <Col xs={6}>
+          <Form.Label className='fw-bold mb-3 mt-3'>Personal Email</Form.Label>
+          <Form.Control type='text' value='eshajaiswal98@gmail.com'/>
+          </Col>
+          <Col xs={6}>
+          <Form.Label className='fw-bold mb-3 mt-3'>Mobile Number</Form.Label>
+          <Form.Control type='text' value='7654328965'/>
+          </Col>
+          </Row>
+          <Row>
+            <Col xs={6}>
+            <Form.Label className='fw-bold mb-3 mt-3'>Current Location</Form.Label>
+          <Form.Control type='text' value='patna'/>
+          </Col>
+          </Row>
+          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose1}>
             Close
           </Button>
-         
+          
         </Modal.Footer>
       </Modal>
       <Modal show={show2} onHide={handleClose2}>
@@ -433,8 +459,71 @@ const RecruiterMaster = () => {
           <Modal.Title>Work Information</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <Form.Control type='text' placeholder='Highest Qualification'/>
-        <Form.Control type='text' placeholder='Graduation'/>
+          <Container>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Highest Qualification</Form.Label>
+        <Form.Control type='text'  value='Mca'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Graduation</Form.Label>
+        <Form.Control type='text' value='Bca'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Date of Birth</Form.Label>
+        <Form.Control type='text' value='17-oct-1998'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Languages Known</Form.Label>
+        <Form.Control type='text' value='Hindi,English'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>No. of Years Recruitment</Form.Label>
+        <Form.Control type='text' value='4'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Experience (india/International)</Form.Label>
+        <Form.Control type='text' value='India'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Prefrence-IT/Non IT</Form.Label>
+        <Form.Control type='text' value='IT'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Currently employed for some organization as a full time employee?</Form.Label>
+        <Form.Control type='text' value='YES'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Are you a consultancy or an individual?</Form.Label>
+        <Form.Control type='text' value='Individual'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>Own portal available? (Naukri, Monsterkkb  Times jobs etc)</Form.Label>
+        <Form.Control type='text' value='yes'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>preferred industries to take JDs? (dropdown of industry sectors)
+</Form.Label>
+        <Form.Control type='text' value='services'/>
+              </Col>
+              <Col xs={6}>
+              <Form.Label className='fw-bold mb-3 mt-3'>handle PAN India JDs or only regional?</Form.Label>
+        <Form.Control type='text' value='yes'/>
+              </Col>
+           </Row>
+                              
+              
+        </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose2}>
@@ -452,31 +541,31 @@ const RecruiterMaster = () => {
                 <Row>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> Name as per bank account</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value=' isha '></Form.Control>
                     </Col>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> Bank Name</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value='central bank of india '></Form.Control>
                     </Col>
                 </Row>
                 <Row>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> Account Number</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value='3461027255 '></Form.Control>
                     </Col>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> IFSC</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value=' CBIN0283353'></Form.Control>
                     </Col>
                 </Row>
                 <Row>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> Account Type</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value=' saving'></Form.Control>
                     </Col>
                     <Col sx={6}>
                         <Form.Label className='fw-bold mb-3 mt-3'> Branch Location</Form.Label>
-                        <Form.Control type="text" placeholder=' '></Form.Control>
+                        <Form.Control type="text" value=' hanuman nagar'></Form.Control>
                     </Col>
                 </Row>
             </form>
