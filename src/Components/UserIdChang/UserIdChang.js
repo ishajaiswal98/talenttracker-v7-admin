@@ -2,9 +2,10 @@ import React from 'react'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Sidebar from '../Sidebar/Sidebar'
 import { ToastContainer } from 'react-toastify';
-import { Form  , Container , Row , Col} from 'react-bootstrap';
+import { Form  , Container , Row , Col , Button} from 'react-bootstrap';
 
 const UserIdChang = () => {
+    
   return (
     <div>
          <Sidebar />
@@ -33,7 +34,7 @@ const UserIdChang = () => {
                 <Form.Control type='text' placeholder='Enter Your Password'/>
                 </Col>
                 <Col xs={6}>
-                <Form.Label  className='fw-bold mb-3 mt-3'>Unsubscribe </Form.Label>
+                <Button variant='danger' href="/" style={{marginTop:"1rem" , borderRadius:'5rem'}}>Unsubscribe</Button>
                 </Col>
 
             </Row>

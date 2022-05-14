@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import { Container, Row, Col,Form , Button} from 'react-bootstrap'
@@ -6,8 +6,10 @@ import { ToastContainer  } from 'react-toastify';
 import Select from 'react-select'
 import "./Dashboard.css";
 const Dashboard = () => {
-  
-   
+  const [checked, Setchecked]=useState(false)
+  const handleCheck = () => Setchecked(!checked)
+  const [checked1, Setchecked1]=useState(false)
+  const handleCheck1 = () => Setchecked1(!checked1)
   const options = [
     { value: 'Services', label: 'Services' },
     { value: 'Manufacturing', label: 'Manufacturing' },
@@ -86,7 +88,16 @@ const Dashboard = () => {
                 <Form.Label  className='fw-bold mb-3 mt-3'>priority tag (P) </Form.Label>
                 </Col>
                 <Col xs={6}>
-                <Form.Label  className='fw-bold mb-3 mt-3'>JD upload date-time  </Form.Label>
+                  <Row>
+                    <Col xs={6}>
+                <Form.Label  className='fw-bold mb-3 mt-3'>JD upload date  </Form.Label>
+                <Form.Control type="date" />
+                </Col>
+                <Col xs={6}>
+                  <Form.Label className='fw-bold mb-3 mt-3'>Time</Form.Label>
+                  <Form.Control type="time" />
+                </Col>
+                </Row>
                 </Col>
               </Row>
               <Row>
@@ -193,8 +204,27 @@ const Dashboard = () => {
               </Row>
               <Row>
                 <Col xs={6}>
-                <Form.Label  className='fw-bold mb-3 mt-3'>Number of submissions required  </Form.Label>
-                <Form.Control type='text' placeholder='  '/>
+                  <Form.Group>
+                <Form.Label  className='fw-bold mb-3 mt-3'>Number of cvs submissions required  </Form.Label>
+                <Form.Select name="numberofcvs" aria-label="Default select example">
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                </Form.Select>
+                </Form.Group>
+                <Form.Group className='mt-3'>
+                  <Form.Label className="fw-bold">Client Company name to disclosed to candidate</Form.Label>
+                  <Form.Select name="disclosedtocandidate">
+                    <option values="yes">Yes</option>
+                    <option value='no'>No</option>
+                  </Form.Select>
+                </Form.Group>
                 </Col>
                 <Col xs={6}>
                 <Form.Label  className='fw-bold mb-3 mt-3'>Allow one candidate submission by user? </Form.Label>
@@ -203,6 +233,13 @@ const Dashboard = () => {
                     <option value="1">Yes</option>
                     <option value="2">No</option>
                     </Form.Select>
+                    <Form.Group className='mt-3'>
+                  <Form.Label className="fw-bold">Number of working days</Form.Label>
+                  <Form.Select name="numberofworkingday">
+                    <option values="5">5</option>
+                    <option value='6'>6</option>
+                  </Form.Select>
+                </Form.Group>
                 </Col>
               </Row>
                 <Row>
@@ -271,8 +308,8 @@ const Dashboard = () => {
                     </Col>
                     </Row>
                     <Row>
-                      <Col>
-                    <Form.Label className='fw-bold mb-3 mt-3'>gross annual CTC of the candidate</Form.Label>
+                      <Col xs={6}>
+                    <Form.Label className='fw-bold mb-3 mt-3'>Gross annual CTC of the candidate</Form.Label>
                     <Form.Select aria-label="Default select example">
                     <option>select</option>
                     <option value="1">- 8.33%</option>
@@ -282,14 +319,21 @@ const Dashboard = () => {
                     <option value="5">6%</option>
                     <option value="6">12%</option>
                     </Form.Select>
-                    
+                  </Col>
+                  <Col xs={6}>
+                    <Form.Group className="mt-3">
+                      <Form.Label className="fw-bold">Audio JD</Form.Label>
+                      <Form.Control type='file' name="jdaudio" accept="Audio/mp3" />
+                    </Form.Group>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs={6}>
                   <Form.Label className='fw-bold mb-3 mt-3'>Your Payout</Form.Label>
-                  <Form.Check type="checkbox" label="% payout If you use Talent Tracker’s database. " />
-                    <Form.Check type="checkbox" label=" % payout if you use your own portal- naukri/monster/times job etc " />
+                  <Form.Check type="checkbox" label="% payout If you use Talent Tracker’s database. " onClick={handleCheck} />
+                  {checked?<Form.Select className="mt-2 mb-2"><option value="if consultancy">if consultancy</option><option value="If individual">If individual</option></Form.Select>: <></>}
+                    <Form.Check type="checkbox" label=" % payout if you use your own portal- naukri/monster/times job etc " onClick={handleCheck1} />
+                    {checked1?<Form.Select className="mt-2 mb-2"><option value="if consultancy">if consultancy</option><option value="If individual">If individual</option></Form.Select>: <></>}
                     <Form.Check type="checkbox" label=" absolute value payout if use your own portal (Naukri/Monster/Timesjob etc) " />
                     <Form.Check type="checkbox" label=" absolute value payout---if use Talent Trackers database. " />
                   </Col>
@@ -298,9 +342,17 @@ const Dashboard = () => {
                   <Select isMulti options={options} />
                   </Col>
                 </Row>
-                <Button variant="primary" >
-            Save 
-          </Button> 
+                <Row>
+                  <Col xs={12}>
+                    <Form.Group className="mt-3">
+                      <Form.Label className="fw-bold">Client Company Address.</Form.Label>
+                      <Form.Control as='textarea' />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Button variant="primary" className="mt-3">
+            <i className="fas fa-save me-3"></i>Save 
+          &nbsp;&nbsp;</Button> 
             </form>
         </Container>
     </div>

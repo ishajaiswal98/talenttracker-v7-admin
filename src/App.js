@@ -13,6 +13,7 @@ import RecruiterMaster from "./Components/RecruiterMaster/RecruiterMaster";
 import JdMaster from "./Components/JdMaster/JdMaster";
 import Filter from './Components/Filter/Filter'
 import UserIdChang from "./Components/UserIdChang/UserIdChang";
+import UserDashboard from "./Components/UserDashboard/UserDashboard";
 function App() {
 
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path="/JdMaster" element={<JdMaster/>}/>
       <Route path="/Filter" element={<Filter/>}/>
       <Route path="/useridlevl" element={<UserIdChang/>}/>
+      <Route path="/userdashboard" element={<UserDashboard/>}/>
     </Routes>
   </BrowserRouter>
     </>
