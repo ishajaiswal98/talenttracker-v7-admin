@@ -14,6 +14,7 @@ import JdMaster from "./Components/JdMaster/JdMaster";
 import Filter from './Components/Filter/Filter'
 import UserIdChang from "./Components/UserIdChang/UserIdChang";
 import UserDashboard from "./Components/UserDashboard/UserDashboard";
+import Filter2 from "./Components/JdMaster/Filter2";
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path="/Filter" element={<Filter/>}/>
       <Route path="/useridlevl" element={<UserIdChang/>}/>
       <Route path="/userdashboard" element={<UserDashboard/>}/>
+      <Route path="/Filter2" element={<Filter2/>}/>
     </Routes>
   </BrowserRouter>
     </>

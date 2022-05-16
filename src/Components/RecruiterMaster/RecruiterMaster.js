@@ -116,8 +116,9 @@ const RecruiterMaster = () => {
                     <th>Prefrence It/n On It</th>
                     <th>Personal Information</th>
                     <th>Work Information</th>
-                    <th>Action</th>
+                   
                     <th>Bank Details</th>
+                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -134,13 +135,14 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-info-circle" aria-hidden="true"></i></td>
-                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
                     </td>
-                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-receipt" aria-hidden="true"></i></td>
+                   
                 </tr>
                 <tr>
                     <td>1</td>
@@ -155,13 +157,14 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-info-circle" aria-hidden="true"></i></td>
-                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
                     </td>
-                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-cheque" aria-hidden="true"></i></td>
+                    
                 </tr>
                 <tr>
                     <td>1</td>
@@ -176,13 +179,14 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'plink', textDecoration:'underline'}}><i class="fa fa-info-circle" aria-hidden="true"></i></td>
-                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
                     </td>
-                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-receipt" aria-hidden="true"></i></td>
+                   
                 </tr>
                 <tr>
                     <td>1</td>
@@ -197,13 +201,15 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-info-circle" aria-hidden="true"></i></td>
-                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                    
+                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
                     </td>
-                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-receipt" aria-hidden="true"></i></td>
+                    
                 </tr>
                 <tr>
                     <td>1</td>
@@ -218,13 +224,14 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-info-circle" aria-hidden="true"></i></td>
-                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
                     </td>
-                    <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-receipt" aria-hidden="true"></i></td>
+                    
                 </tr>
                 <tr>
                     <td>1</td>
@@ -241,74 +248,79 @@ const RecruiterMaster = () => {
                     <td>n/a</td>
                     <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
                     <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td><Button variant='primary'>Edit</Button>
-                    <Button variant='primary'>Delete</Button>
-                    
-                    </td>
                     <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Prashant</td>
-                    <td>2</td>
-                    <td>Na</td>
-                    <td>4</td>
-                    <td>n/a</td>
-                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
-                    <td>Indivisual</td>
-                    <td>82827272828</td>
-                    <td>patna</td>
-                    <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
                     <td><Button variant='primary'>Edit</Button>
-                    <Button variant='primary'>Delete</Button>
-                    
-                    </td>
-                    <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Prashant</td>
-                    <td>2</td>
-                    <td>Na</td>
-                    <td>4</td>
-                    <td>n/a</td>
-                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
-                    <td>Indivisual</td>
-                    <td>82827272828</td>
-                    <td>patna</td>
-                    <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td><Button variant='primary'>Edit</Button>
-                    <Button variant='primary'>Delete</Button>
-                    
-                    </td>
-                    <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Prashant</td>
-                    <td>2</td>
-                    <td>Na</td>
-                    <td>4</td>
-                    <td>n/a</td>
-                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
-                    <td>Indivisual</td>
-                    <td>82827272828</td>
-                    <td>patna</td>
-                    <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
-                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
                    
+                    <Button variant='primary'>Delete</Button>
+                    
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prashant</td>
+                    <td>2</td>
+                    <td>Na</td>
+                    <td>4</td>
+                    <td>n/a</td>
+                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
+                    <td>Indivisual</td>
+                    <td>82827272828</td>
+                    <td>patna</td>
+                    <td>n/a</td>
+                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
                     <td><Button variant='primary'>Edit</Button>
                     <Button variant='primary'>Delete</Button>
                     
-                    </td> <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prashant</td>
+                    <td>2</td>
+                    <td>Na</td>
+                    <td>4</td>
+                    <td>n/a</td>
+                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
+                    <td>Indivisual</td>
+                    <td>82827272828</td>
+                    <td>patna</td>
+                    <td>n/a</td>
+                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td><Button variant='primary'>Edit</Button>
+                    <Button variant='primary'>Delete</Button>
+                    
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prashant</td>
+                    <td>2</td>
+                    <td>Na</td>
+                    <td>4</td>
+                    <td>n/a</td>
+                    <td  onClick={handleShow} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td  onClick={handleShow4} style={{color:'blue', textDecoration:'underline'}}>5</td>
+                    <td>Indivisual</td>
+                    <td>82827272828</td>
+                    <td>patna</td>
+                    <td>n/a</td>
+                    <td onClick={handleShow1} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow2} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td onClick={handleShow3} style={{color:'blue', textDecoration:'underline'}}>n/a</td>
+                    <td><Button variant='primary'>Edit</Button>
+                    <Button variant='primary'>Delete</Button>
+                    
+                    </td>
+                     
                 </tr>
                 
             </tbody>

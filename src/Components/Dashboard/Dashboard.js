@@ -282,10 +282,10 @@ const Dashboard = () => {
                     <option value="2">Admin</option>
                     </Form.Select>
                     </Col>
-                    <Col xs={6}>
+                    {/* <Col xs={6}>
                     <Form.Label className='fw-bold mb-3 mt-3'> Assured delivery time required by client (TAT)</Form.Label>
                     
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col xs={6}>
