@@ -15,6 +15,11 @@ import Filter from './Components/Filter/Filter'
 import UserIdChang from "./Components/UserIdChang/UserIdChang";
 import UserDashboard from "./Components/UserDashboard/UserDashboard";
 import Filter2 from "./Components/JdMaster/Filter2";
+import Report from "./Components/Report/Report";
+import Client from "./Components/Client/Client";
+import Freelance from "./Components/Freelance/Freelance";
+import ClientAgreement from "./Components/ClientAgreement/ClientAgreement";
+import LandingPage from "./Components/LandingPage/LandingPage";
 function App() {
 
   return (
@@ -32,6 +37,12 @@ function App() {
       <Route path="/useridlevl" element={<UserIdChang/>}/>
       <Route path="/userdashboard" element={<UserDashboard/>}/>
       <Route path="/Filter2" element={<Filter2/>}/>
+      <Route path='/report' element={<Report/>}/>
+      <Route path="/client" element={<Client/>}/>
+      <Route path="/freelance" element={<Freelance/>}/>
+      <Route path="/client-agreement" element={<ClientAgreement/>}/>
+      <Route path="/landing-page" element={<LandingPage/>}/>
+
     </Routes>
   </BrowserRouter>
     </>

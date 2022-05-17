@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Container, Table, Modal, Button, Form, Row, Col } from 'react-bootstrap'
-import {  ButtonGroup, Dropdown, Tooltip,OverlayTrigger } from 'react-bootstrap';
+import {  ButtonGroup, Dropdown } from 'react-bootstrap';
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Sidebar from '../Sidebar/Sidebar'
 import { ToastContainer, toast } from 'react-toastify';
@@ -50,7 +50,7 @@ const RecruiterMaster = () => {
             </div>
             <div className='mb-2'>
             <ButtonGroup className="btn btn-light">
-            <OverlayTrigger placement='bottom' overlay={<Tooltip id="tooltip-disabled">Save Jd</Tooltip>}>
+            
             <Dropdown>
             <Dropdown.Toggle variant="light" id="dropdown-basic">
             <i className="far fa-save"></i>
@@ -60,8 +60,8 @@ const RecruiterMaster = () => {
 
   </Dropdown.Menu>
             </Dropdown>
-            </OverlayTrigger>
-            <OverlayTrigger placement='bottom' overlay={<Tooltip id="tooltip-disabled">Add List</Tooltip>}>
+           
+           
             <Dropdown className='mx-2'>
             <Dropdown.Toggle variant="light" id="dropdown-basic">
             <i className="fas fa-plus"></i>
@@ -87,13 +87,13 @@ const RecruiterMaster = () => {
     </Form>
   </Dropdown.Menu>
             </Dropdown>
-            </OverlayTrigger>
-            <OverlayTrigger placement='bottom' overlay={<Tooltip id="tooltip-disabled">Reload Page</Tooltip>}>
+           
+            
             <Button className="btn btn-light mx-2" onClick={refreshPage}><i className="fas fa-redo-alt"></i></Button>
-            </OverlayTrigger>
+           
           </ButtonGroup>
           <ButtonGroup>
-            <Button variant='success'  href='/Filter'><i className="fa fa-search me-2" style={{color:'#fff'}} ></i>Search</Button>
+            <Button variant='success'  href='/Filter'><i className="fa fa-filter me-2" style={{color:'#fff'}} ></i>Filter</Button>
             
           </ButtonGroup>
             </div>
@@ -135,7 +135,7 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'orange', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
                     <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
                     <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
@@ -157,7 +157,7 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'orange', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
                     <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
                     <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
@@ -179,7 +179,7 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'orange', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
                     <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
                     <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>
@@ -201,7 +201,7 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'orange', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
                     <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
                     
                     <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
@@ -224,7 +224,7 @@ const RecruiterMaster = () => {
                     <td>82827272828</td>
                     <td>patna</td>
                     <td>n/a</td>
-                    <td onClick={handleShow1} style={{color:'pink', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
+                    <td onClick={handleShow1} style={{color:'orange', textDecoration:'underline'}}><i class="fa fa-address-book" aria-hidden="true"></i></td>
                     <td onClick={handleShow2} style={{color:'red', textDecoration:'underline'}}><i class="fa fa-briefcase" aria-hidden="true"></i></td>
                     <td onClick={handleShow3} style={{color:'green', textDecoration:'underline'}}><i class="fa fa-home" aria-hidden="true"></i></td>
                     <td><Button variant='primary'>Edit</Button>

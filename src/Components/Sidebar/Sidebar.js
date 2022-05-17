@@ -50,25 +50,25 @@ const Sidebar = () => {
                <Link to='/userdashboard'>User dashboard</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<SiCraftcms />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>CMS/Landing page edit/content edit </Link> 
+               <Link to='/landing-page'>CMS/Landing page edit/content edit </Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>Reports- chat transcripts- history</Link> 
+               <Link to='/report'>Reports- chat transcripts- history</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<MdEmail />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
                <Link to='/'>Email Cpanel</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>Freelance contract agreement filling</Link> 
+               <Link to='/freelance'>Freelance contract agreement filling</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>client agreement filling</Link> 
+               <Link to='/client-agreement'>client agreement filling</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
                <Link to='/'>invoicing</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
-               <Link to='/'>Client master</Link> 
+               <Link to='/client'>Client master</Link> 
               </MenuItem>
               <MenuItem active={true} icon={<AiFillDashboard />} onMouseEnter={()=>setMenuCollapse(false)} onMouseLeave={()=>setMenuCollapse(true)}>
                <Link to='/'>user adhar card/GST registration certificate database</Link> 

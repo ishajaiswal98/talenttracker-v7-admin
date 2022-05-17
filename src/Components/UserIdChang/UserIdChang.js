@@ -30,10 +30,15 @@ const UserIdChang = () => {
                     <thead>
                         <tr>
                 <th>User Category</th>
-                <th>Password </th>
+                
                 <th>How many JDs a user can unlock in a day?</th>
                 <th>CVs quality check required for this user ID? </th>
                 <th>Detail JD (doc, pdf file sent by client) to be shown to a particular user even if he or she is not accepting the JD?  </th>
+                <th>Password</th>
+                <th>Unsubscribe</th>
+                <th>Allow user to remove candidate’s mobile number from the tracker sheet</th>
+                <th>Allow user to write special remarks, comments in the tracker shee</th>
+                <th>Admin can make it compulsory for user to use own / our database</th>
                </tr>
                </thead>
                </Table>
